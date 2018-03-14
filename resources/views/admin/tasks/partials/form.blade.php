@@ -3,7 +3,7 @@
 
 <input type="hidden" name="user_id" value="{{$task->user_id or ""}}">
 
-<hr />
+<hr/>
 
 <input class="btn btn-primary" type="submit" value="Save">
 <a class="btn btn-danger" href="{{ route('admin.tasks.index') }}" role="button">Cancel</a>
