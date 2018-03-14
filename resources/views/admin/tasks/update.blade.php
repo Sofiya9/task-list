@@ -8,7 +8,7 @@
                     <input type="hidden" name="_method" value="put">
                     {{ csrf_field() }}
                     <label for="task"><h2>Edit task</h2></label>
-                    <div class="panel panel-default">
+                    <div class="panel panel-default" >
                         <div class="panel-body">
                             @include('admin.tasks.partials.form')
                         </div>
