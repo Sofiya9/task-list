@@ -7,7 +7,7 @@
                 <h2>Task list</h2>
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <table class="table table-hover table-condensed ">
+                        <table class ="table table-hover table-condensed ">
                             <thead>
                             <tr>
                                 <th>Task</th>
