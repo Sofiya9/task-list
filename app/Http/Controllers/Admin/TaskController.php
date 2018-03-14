@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Task;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class TaskController extends Controller
 {
@@ -63,7 +63,7 @@ class TaskController extends Controller
     public function edit(Task $task)
     {
         return view('admin.tasks.update', [
-            'tasks' => $task]);
+            'task' => $task]);
     }
 
     /**
@@ -76,7 +76,7 @@ class TaskController extends Controller
      public function update(Request $request, Task $task)
      {
          $task->update($request->except('user_id'));
-         return redirect()->route('tasks.index');
+         return redirect()->route('admin.tasks.index');
      }
 
     /**
